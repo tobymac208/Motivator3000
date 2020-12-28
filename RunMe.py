@@ -1,6 +1,6 @@
 # Stress relief exercises and coping mechanisms.
 exercises = ['Meditate', 'Do one of those exercises in your notes app', 'Take a power nap. 10 minutes will change your outlook.']
-wisdom = ['Motivation, for you, is mostly how much energy you have', 'Don\'t quit. You\'ll wish you hadn\'t quit.']
+wisdom = ['Don\'t quit. You\'ll wish you hadn\'t quit.', 'Exercise and meditation are key.']
 
 # Opening message for me -- tuple because it shouldn't change during run-time
 MESSAGE = ('\t\t\tM\tE\tS\tS\tA\tG\tE\n\t\t\tStress, anxiety, and loneliness are temporary things. \n\t\t\tI wasn\'t mature because I was in martial arts, I was mature because I was responsible, \n\t\t\tsober, and wanted to change.')
@@ -23,9 +23,9 @@ if __name__ == "__main__":
     # What's needed more?
     response = int(input('What do you need? 1) exercises or 2) wisdom? '))
 
-    if response is 1:
+    if response == 1:
         list_exercises()
-    elif response is 2:
+    elif response == 2:
         list_wisdom()
     else:
         print('Oops. Do you want either of those? That answer doesn\'t work.')
